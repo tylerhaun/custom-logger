@@ -58,16 +58,7 @@ const logger = winston.createLogger({
   level: defaultLevel,
   levels: customLevels.levels,
   format,
-  //format: winston.format.combine(
-  //  winston.format.json(),
-  //  winston.format.colorize({all: true}),
-  //  winstonMongoMetadataFormat(),
-  //),
   defaultMeta,
-  //transports: [
-  //  //new CustomConsoleTransport({}),
-  //  mongoTransport,
-  //],
 });
 
 
