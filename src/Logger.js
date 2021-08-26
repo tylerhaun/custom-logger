@@ -9,42 +9,6 @@ const winstonMongoMetadataFormat = require("./winston-mongo-metadata-format");
 const defaultLevel = "trace";
 
 
-//class CustomConsoleTransport extends Transport {
-//  constructor(opts) {
-//    super(opts);
-//    }
-//
-//  log(info, callback) {
-//    setImmediate(() => {
-//      this.emit('logged', info);
-//    });
-//    const message = info[Symbol.for("message")];
-//    console.log(message);
-//    callback();
-//  }
-//};
-
-
-//const winstonMongoMetadataFormat = winston.format((info, opts) => {
-//  try {
-//    info[Symbol.for("metadata")] = JSON.parse(JSON.stringify(info));
-//    return info;
-//  }
-//  catch(e) {
-//    console.error(e);
-//    return info;
-//  }
-//})
-
-
-//const mongoOptions = {
-//  db: process.env.LOGGER_MONGO_URL,
-//  metaKey: Symbol.for("metadata"),
-//  level: defaultLevel,
-//};
-//const mongoTransport = new winston.transports.MongoDB(mongoOptions)
-
-
 const customLevels = {
   levels: {
     fatal: 0,
